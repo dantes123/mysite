@@ -417,3 +417,115 @@ box-shadow: none;
     font-size: 14px;
 
 }
+/*==========BURGER==========*/
+.burger__menu{
+display: none;
+padding: 13px 0;
+
+}
+
+.burger-item{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+    color: transparent;
+    position: relative;
+
+}
+.burger-item:after,
+.burger-item:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+    color: transparent;
+    left: 0;
+    z-index: 1;
+
+}
+.burger-item:after{
+    top: -8px;
+
+}
+.burger-item:before{
+    bottom: -8px;
+}
+
+
+/*============MEDIA=============*/
+
+@media (max-width: 950px) {
+    .nav-menu{
+        display: none;
+    }
+    .burger__menu{
+        display: block;
+    }
+    .intro__title{
+        font-size: 45px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .intro{
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .intro__title{
+        font-size: 30px;
+    }
+    .intro__subtitle{
+        font-size: 16px;
+    }
+    .feather__item{
+        width: 50%;
+    }
+    .works__item{
+        width: 33.333%;
+        height: 300px;
+    }
+    .team__person{
+        width: 50%;
+    }
+    .person__media{
+        padding: 0 70px 10px 0;
+    }
+    .review__text{
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    .review__author{
+        font-size: 11px;
+    }
+    .media-footer {
+        border: none;
+        margin: 0 auto;
+    }
+    .footer__block{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 490px) {
+    .feather__item{
+        width: 100%;
+    }
+    .works__item{
+        width: 50%;
+        height: 250px;
+    }
+    .team__person{
+        width: 100%;
+        padding: 0 50px ;
+    }
+
+}
